@@ -3,10 +3,10 @@
 
 <head>
     <title>
-        Patton Tang
+        Student Name :3
     </title>
     
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,24 +15,42 @@
 <body>
     <div class="container">
         <div id="header" class="header_section">
+            <h2 class="header_title">
+                Alternate Text Here
+            </h2>
             <ul class="nav-bar">
-                <li><button>Home</button></li>
-                <li><button>About</button></li>
-                <li><button>Projects</button></li>
-                <li><button>Skills</button></li>
-                <li><button>Contact</button></li>
+                <li onclick="change_block_content('home')"><button>Home</button></li>
+                <li onclick="change_block_content('about')"><button>About</button></li>
+                <li onclick="change_block_content('projects')"><button>Projects</button></li>
+                <li onclick="change_block_content('skills')"><button>Skills</button></li>
+                <li onclick="change_block_content('contact')"><button>Contact</button></li>
             </ul>
         </div>
 
         <div id="block_content" class="content_section">
             <!-- Information here -->
+             <div id="home_content">
+                <h1>HOME CONTENT</h1>
+             </div>
+             <div id="about_content">
+                <h1>ABOUT CONTENT</h1>
+             </div>
+             <div id="projects_content">
+                <h1>PROJECTS CONTENT</h1>
+             </div>
+             <div id="skills_content">
+                <h1>SKILLS CONTENT</h1>
+             </div>
+             <div id="contact_content">
+                <h1>CONTACT CONTENT</h1>
+             </div>
         </div>
 
         <div id="footer" class="footer_section">
             <!-- Information here -->
         </div>
 
-        <script src ="js/transition.js"></script>
+        <script src="js/transition.js"></script>
     </div> <!-- end Container -->
 </body>
 
