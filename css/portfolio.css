@@ -32,6 +32,8 @@ body{
     list-style-type: none;
     display: flex;
     width: 100%;
+    max-width: 100vw; /* Restrict viewport to prevent overflow */
+    box-sizing: border-box; /* Prevents padding from pushing outside max width*/
 
     margin: 0px;
     padding: 0.5em;
@@ -50,6 +52,8 @@ body{
     outline: none;
     border: none;
     background: none;
+
+    position:relative; /* relative + top/bottom will not affect surrounding elements*/
 }
 
 .nav-bar button:hover{
@@ -57,6 +61,7 @@ body{
     transform: translateY(-8px);
     font-weight: bold;
     transition: font-weight 0.05s ease;
+    transition: top;
 }
 
 /* id class : block_content content_section
@@ -64,6 +69,45 @@ body{
     - The "none" will act as (hide) */
 #home_content{
     display: block;
+}
+
+#introduction_content{
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+
+    margin: 0px;
+}
+
+#introduction_content img{
+    width: 150px;
+    height: 150px;
+    margin: 2em;
+
+    border-radius: 50%; /* Roundedness */
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#introduction_content img:hover{
+    animation: rotate 2.5s linear infinite;
+    /* 2.5 seconds for a full rotation */
+}
+
+#biography_content{
+    margin: 0px;
+}
+
+#quote_content{
+    font-size: 14px;
 }
 
 #about_content{
@@ -81,5 +125,4 @@ body{
 #contact_content{
     display: none;
 }
-
 /* id class : footer footer_section */
