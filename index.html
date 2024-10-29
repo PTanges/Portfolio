@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        Student Name :3
+        Patton Tang
     </title>
     
     <link rel="stylesheet" href="css/portfolio.css">
@@ -16,7 +16,7 @@
     <div class="container">
         <div id="header" class="header_section">
             <h2 class="header_title">
-                Alternate Text Here
+                HOME
             </h2>
             <ul class="nav-bar">
                 <li onclick="change_block_content('home')"><button>Home</button></li>
@@ -30,8 +30,17 @@
         <div id="block_content" class="content_section">
             <!-- Information here -->
              <div id="home_content">
-                <h1>HOME CONTENT</h1>
+                <div id="introduction_content">
+                    <img src="assets/icon.jpg"
+                        alt="A familiar crow from a long running webcomic series"
+                        onclick="change_block_content('about')">
+                    <p id="biography_content">
+                        I'm a computer science student at California State University Fullerton!
+                    </p>
+                    <p id="quote_content"></p> <!-- Quote chosen from JS file -->
+                </div>
              </div>
+
              <div id="about_content">
                 <h1>ABOUT CONTENT</h1>
              </div>
