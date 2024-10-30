@@ -8,7 +8,6 @@ function change_block_content(new_page){
     document.getElementById(current_page + "_" + "content").style.display = "none";   
     document.getElementById(new_page + "_" + "content").style.display = "block";
     document.getElementsByClassName("header_title")[0].innerHTML = new_page.toUpperCase();
-    console.log(new_page)
     current_page = new_page;
 }
 

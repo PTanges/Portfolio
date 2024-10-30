@@ -20,12 +20,13 @@
             </h2>
             <ul class="nav-bar">
                 <li onclick="change_block_content('home')"><button>Home</button></li>
-                <li onclick="change_block_content('about')"><button>About</button></li>
+                <li onclick="change_block_content('biography')"><button>Biography</button></li>
                 <li onclick="change_block_content('projects')"><button>Projects</button></li>
                 <li onclick="change_block_content('skills')"><button>Skills</button></li>
                 <li onclick="change_block_content('contact')"><button>Contact</button></li>
             </ul>
         </div>
+
 
         <div id="block_content" class="content_section">
             <!-- Information here -->
@@ -33,17 +34,52 @@
                 <div id="introduction_content">
                     <img src="assets/icon.jpg"
                         alt="A familiar crow from a long running webcomic series"
-                        onclick="change_block_content('about')">
-                    <p id="biography_content">
+                        onclick="change_block_content('bio')">
+                    <p id="quick_biography_content">
                         I'm a computer science student at California State University Fullerton!
                     </p>
                     <p id="quote_content"></p> <!-- Quote chosen from JS file -->
                 </div>
              </div>
 
-             <div id="about_content">
-                <h1>ABOUT CONTENT</h1>
+
+             <div id="biography_content">
+                <div id="skills_content"></div>
+                    <h3>📄 <a href="https://github.com/PTanges/Portfolio/blob/master/assets/PT_Resume.pdf" target="_blank" rel="noopener noreferrer"> <!-- target opens in new tab, rel for security -->
+                        Downloadable Resume (PDF)</a></h3>
+                    <h4>🖥️ Skills</h4>
+                    <p class="biography_subsection_content">
+                        <b>Primary Software Skills:</b> Python (Flask), Version Control Systems (Git), HTML, CSS, Javascript (JS) <br>
+                        <b>Familiar Software:</b> Java, C++, C#, Sci-Kit Learn, SQL, Command Line Interface (CLI), Powershell, Dropbox <br> <br>
+                        <b>Technical Skills:</b> 
+                        Agile Methodology, Adobe Creative Suite, <br>
+                        Microsoft Office Suite (Word, Excel, Powerpoint), Google Workspace (Drive, Docs, Sheets) <br> <br>
+                        Languages: Spanish (Basic), Chinese (Conversational)
+                    </p>
+                <div id="education_content"></div>
+                    <h4>🎓 Education</h4>
+                    <p class="biography_subsection_content">
+                        California State University, Fullerton <br>
+                        Bachelor of Science, Computer Science <br>
+                        Expected Graduation: May 2025
+                    </p>
+                <div id="background_content"></div>
+                    <h4>🔆 Background & Interests</h4>
+                    <p class="biography_subsection_content">
+                        <b>Biography</b><br>
+                        I'm a computer science student at CSU Fullerton, having been born and raised in California. <br>
+                        General puzzles and strategy games appealed to me as I grew up, eventually leading me to my major. <br>
+                        These hobbies provide a creative outlet to continually express myself and broaden my horizons.<br>
+                        <br>
+                        <b>Interests</b><br>
+                        Video Games & Game Development - RPGs, puzzle & strategy games along with trying my hand at making games via Unity, Pygame, and Unreal Engine<br>
+                        Clothesmaking - Adjusting thrifted clothes with raw fabric and hand-sewn seams <br>
+                        Cooking & Baking - Typically simple meals. Cuisine ranges from East Asian to American to European <br>
+                        Art - Primarily Digital Illustrations with some Traditional Artwork (Acrylic) <br>
+                    </p>
              </div>
+
+
              <div id="projects_content">
                 <h1>PROJECTS CONTENT</h1>
              </div>

@@ -102,7 +102,7 @@ body{
     /* 2.5 seconds for a full rotation */
 }
 
-#biography_content{
+#quick_biography_content{
     margin: 0px;
 }
 
@@ -110,7 +110,7 @@ body{
     font-size: 14px;
 }
 
-#about_content{
+#biography_content{
     display: none;
 }
 
