@@ -22,8 +22,6 @@
                 <li onclick="change_block_content('home')"><button>Home</button></li>
                 <li onclick="change_block_content('biography')"><button>Biography</button></li>
                 <li onclick="change_block_content('projects')"><button>Projects</button></li>
-                <li onclick="change_block_content('skills')"><button>Skills</button></li>
-                <li onclick="change_block_content('contact')"><button>Contact</button></li>
             </ul>
         </div>
 
@@ -35,7 +33,7 @@
                     <img src="assets/icon.jpg"
                         alt="A familiar crow from a long running webcomic series"
                         onclick="change_block_content('bio')">
-                    <p id="quick_biography_content">
+                    <p id="introduction_subsection_content">
                         I'm a computer science student at California State University Fullerton!
                     </p>
                     <p id="quote_content"></p> <!-- Quote chosen from JS file -->
@@ -44,10 +42,8 @@
 
 
              <div id="biography_content">
-                <div id="skills_content"></div>
-                    <h3>📄 <a href="https://github.com/PTanges/Portfolio/blob/master/assets/PT_Resume.pdf" target="_blank" rel="noopener noreferrer"> <!-- target opens in new tab, rel for security -->
-                        Downloadable Resume (PDF)</a></h3>
-                    <h4>🖥️ Skills</h4>
+                <div id="skills_content">
+                    <h2>🖥️ Skills</h2>
                     <p class="biography_subsection_content">
                         <b>Primary Software Skills:</b> Python (Flask), Version Control Systems (Git), HTML, CSS, Javascript (JS) <br>
                         <b>Familiar Software:</b> Java, C++, C#, Sci-Kit Learn, SQL, Command Line Interface (CLI), Powershell, Dropbox <br> <br>
@@ -56,15 +52,19 @@
                         Microsoft Office Suite (Word, Excel, Powerpoint), Google Workspace (Drive, Docs, Sheets) <br> <br>
                         Languages: Spanish (Basic), Chinese (Conversational)
                     </p>
-                <div id="education_content"></div>
-                    <h4>🎓 Education</h4>
+                </div>
+
+                <div id="education_content">
+                    <h2>🎓 Education</h2>
                     <p class="biography_subsection_content">
                         California State University, Fullerton <br>
                         Bachelor of Science, Computer Science <br>
                         Expected Graduation: May 2025
                     </p>
-                <div id="background_content"></div>
-                    <h4>🔆 Background & Interests</h4>
+                </div>
+
+                <div id="background_content">
+                    <h2>🔆 Background & Interests</h2>
                     <p class="biography_subsection_content">
                         <b>Biography</b><br>
                         I'm a computer science student at CSU Fullerton, having been born and raised in California. <br>
@@ -77,17 +77,21 @@
                         Cooking & Baking - Typically simple meals. Cuisine ranges from East Asian to American to European <br>
                         Art - Primarily Digital Illustrations with some Traditional Artwork (Acrylic) <br>
                     </p>
+                </div>
+
+                <div id="contact_content">
+                    <div class="socials_subsection_content">
+                        <a href="https://github.com/PTanges" target="_blank" rel="noopener noreferrer"><img src="assets/github_black.png"></a>
+                        <a href="https://www.linkedin.com/in/patton-tang/"><img src="assets/linkedin_black.png" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="https://github.com/PTanges/Portfolio/blob/master/assets/PT_Resume.pdf" target="_blank" rel="noopener noreferrer"><img src="assets/resume_black.png"></a>
+                        <!-- target opens in new tab, rel for security -->
+                    </div>
+                </div>
              </div>
 
 
              <div id="projects_content">
                 <h1>PROJECTS CONTENT</h1>
-             </div>
-             <div id="skills_content">
-                <h1>SKILLS CONTENT</h1>
-             </div>
-             <div id="contact_content">
-                <h1>CONTACT CONTENT</h1>
              </div>
         </div>
 

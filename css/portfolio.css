@@ -102,7 +102,7 @@ body{
     /* 2.5 seconds for a full rotation */
 }
 
-#quick_biography_content{
+#introduction_subsection_content{
     margin: 0px;
 }
 
@@ -112,17 +112,29 @@ body{
 
 #biography_content{
     display: none;
+    margin: 2em;
+}
+
+.biography_subsection_content{
+    margin: 0 0 0 2em;
+    padding: 0 10px 10px 10px;
+}
+
+.socials_subsection_content{
+    display: flex;
+
+    margin: 1em;
+    padding: 0 0 0 2em;
+}
+
+.socials_subsection_content img{
+    width: 50px;
+    height: 50px;
+    padding: 0em 1em 0em 0em;
+    
 }
 
 #projects_content{
-    display: none;
-}
-
-#skills_content{
-    display: none;
-}
-
-#contact_content{
     display: none;
 }
 /* id class : footer footer_section */
