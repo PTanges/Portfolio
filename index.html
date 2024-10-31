@@ -32,7 +32,7 @@
                 <div id="introduction_content">
                     <img src="assets/icon.jpg"
                         alt="A familiar crow from a long running webcomic series"
-                        onclick="change_block_content('bio')">
+                        onclick="change_block_content('biography')">
                     <p id="introduction_subsection_content">
                         I'm a computer science student at California State University Fullerton!
                     </p>
@@ -45,12 +45,20 @@
                 <div id="skills_content">
                     <h2>🖥️ Skills</h2>
                     <p class="biography_subsection_content">
-                        <b>Primary Software Skills:</b> Python (Flask), Version Control Systems (Git), HTML, CSS, Javascript (JS) <br>
-                        <b>Familiar Software:</b> Java, C++, C#, Sci-Kit Learn, SQL, Command Line Interface (CLI), Powershell, Dropbox <br> <br>
+                        <b>Primary Software Skills:</b>
+                            <ul>Python (Flask), Version Control Systems (Git), HTML, CSS, Javascript (JS)</ul>
+                    </p>
+                    <p class="biography_subsection_content">
+                        <b>Practiced In:</b>
+                            <ul>Java, C++, C#, Sci-Kit Learn, SQL, Command Line Interface (CLI), Powershell, Dropbox</ul>
+                    </p>
+                    <p class="biography_subsection_content">
                         <b>Technical Skills:</b> 
-                        Agile Methodology, Adobe Creative Suite, <br>
-                        Microsoft Office Suite (Word, Excel, Powerpoint), Google Workspace (Drive, Docs, Sheets) <br> <br>
-                        Languages: Spanish (Basic), Chinese (Conversational)
+                            <ul>Agile Methodology, Adobe Creative Suite, Microsoft Office Suite (Word, Excel, Powerpoint), Google Workspace (Drive, Docs, Sheets)</ul>
+                    </p>
+                    <p class="biography_subsection_content">
+                        <b>Languages:</b>
+                            <ul>Spanish (Basic), Chinese (Conversational)</ul>
                     </p>
                 </div>
 
@@ -65,18 +73,26 @@
 
                 <div id="background_content">
                     <h2>🔆 Background & Interests</h2>
-                    <p class="biography_subsection_content">
-                        <b>Biography</b><br>
-                        I'm a computer science student at CSU Fullerton, having been born and raised in California. <br>
-                        General puzzles and strategy games appealed to me as I grew up, eventually leading me to my major. <br>
-                        These hobbies provide a creative outlet to continually express myself and broaden my horizons.<br>
-                        <br>
-                        <b>Interests</b><br>
-                        Video Games & Game Development - RPGs, puzzle & strategy games along with trying my hand at making games via Unity, Pygame, and Unreal Engine<br>
-                        Clothesmaking - Adjusting thrifted clothes with raw fabric and hand-sewn seams <br>
-                        Cooking & Baking - Typically simple meals. Cuisine ranges from East Asian to American to European <br>
-                        Art - Primarily Digital Illustrations with some Traditional Artwork (Acrylic) <br>
-                    </p>
+                    <div class="biography_subsection_title">
+                        <b>Biography</b>
+                    </div>
+                    <div><p>
+                        I'm a computer science student at CSU Fullerton, having been born and raised in California. 
+                        General puzzles and strategy games appealed to me as I grew up, eventually leading me to my major. 
+                        These hobbies provide a creative outlet to continually express myself and broaden my horizons.
+                    </p></div>
+
+                    <div class="biography_subsection_title">
+                        <b>Interests:</b>
+                    </div>
+                    <div id="interests_subsection_content">
+                        <ul>
+                            <li>Video Games & Game Development: <i>RPGs, puzzle, and strategy games with development experience in Pygame, Unity engine, and Unreal Engine</i></li>
+                            <li>Clothesmaking: <i>Augmenting thrifted clothes with raw fabric and hand-sewn seams</i></li>
+                            <li>Cooking & Baking: <i>Often simple homely meals. Cuisine ranges from East Asian to American to European</i></li>
+                            <li>Art: <i>Primarily digital illustrations with some traditional mediums (Pen & Ink, Acrylic on Wood, Sticker Printing)</i></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div id="contact_content">
@@ -91,7 +107,47 @@
 
 
              <div id="projects_content">
-                <h1>PROJECTS CONTENT</h1>
+                <div class="projects_subsection_content">
+                    <h1><b>Canvas</b></h1>
+                    <div class="project_tool_subection_content">
+                        <img src="assets/python.png">
+                        <img src="assets/flask.png">
+                        <img src="assets/html.png">
+                        <img src="assets/css.png">
+                        <img src="assets/js.png">
+                    </div>
+                    <p>
+                        Python (Flask) web application utilizing the Canvas and DOM APIs. Users may create in-browser pieces and export files locally with the Javascript functions. WSGI Server (Gunicorn) is invoked with a Powershell command. Future development additions will utilize P2P connections with the WebSockets API to allow for real-time connectivity between users.
+                    </p>
+                    <a class="project_github_link" href="https://github.com/PTanges/Canvas" target="_blank" rel="noopener noreferrer">Code</a>
+                    <a class="project_github_link" href="https://canvas-82fz.onrender.coms" target="_blank" rel="noopener noreferrer">Project</a>
+                </div>
+
+                <div class="projects_subsection_content">
+                    <h1><b>Portfolio</b></h1>
+                    <div class="project_tool_subection_content">
+                        <img src="assets/html.png">
+                        <img src="assets/css.png">
+                        <img src="assets/js.png">
+                    </div>
+                    <p>
+                        Static portfolio website hosted via Github Pages which utilizes HTML, CSS, and Javascript (JS).
+                    </p>
+                    <a class="project_github_link" href="https://github.com/PTanges/Portfolio" target="_blank" rel="noopener noreferrer">Code</a>
+                    <a class="project_github_link" href="https://ptanges.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">Project</a>
+                </div>
+
+                <div class="projects_subsection_content">
+                    <h1><b>Blackjack AI</b></h1>
+                    <div class="project_tool_subection_content">
+                        <img src="assets/python.png">
+                        <img src="assets/cli_black.png">
+                    </div>
+                    <p>
+                        Command Line Python program showcasing the effectiveness of an AI using the Monte Carlo Algorithm versus a Query Player (You). 
+                    </p>
+                    <a class="project_github_link" href="https://github.com/PTanges/Blackjack-AI/" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
              </div>
         </div>
 
