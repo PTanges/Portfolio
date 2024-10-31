@@ -3,6 +3,7 @@
 
 /* Javascript Functionality */
 var current_page = "home";
+var light_theme = "light";
 
 function change_block_content(new_page){
     document.getElementById(current_page + "_" + "content").style.display = "none";   
@@ -31,5 +32,13 @@ function set_personal_quote(){
 
     document.getElementById("quote_content").textContent = "\"" + _quotes[_quotes_key] + "\"";
 }
-
 document.addEventListener("DOMContentLoaded", set_personal_quote); // Runonce upon page load
+
+function change_light_theme(){
+    /*
+    Functionality:
+    Change all icon links from black to white, or vice versa
+    - Set Header to pure Black, bar to Dark Gray
+    - Change Text Font from Black to White
+    */
+}

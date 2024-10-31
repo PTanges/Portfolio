@@ -1,0 +1,8 @@
+/*
+    Portfolio (mobile)
+    Define in index.html (header) for Header -> Mobile as CSS
+    The mobile will override the Desktop layout (default) for certain elements
+
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="portfolio_mobile.css" media="(max-width: 768px)">
+*/
