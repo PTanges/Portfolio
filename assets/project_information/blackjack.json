@@ -1,0 +1,8 @@
+{
+    "project_name":"blackjack",
+    "description":"description",
+    "challenges":"challenges",
+    "outcome":"outcome",
+    "technologies":["python", "cli"],
+    "screenshot_quantity":"1"
+}

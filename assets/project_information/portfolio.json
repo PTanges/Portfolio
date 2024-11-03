@@ -1,0 +1,8 @@
+{
+    "project_name":"portfolio",
+    "description":"description",
+    "challenges":"challenges",
+    "outcome":"outcome",
+    "technologies":["html", "css", "js"],
+    "screenshot_quantity":"1"
+}

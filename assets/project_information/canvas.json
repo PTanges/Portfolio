@@ -1,0 +1,8 @@
+{
+    "project_name":"canvas",
+    "description":"description<br>Hallelujah",
+    "challenges":"challenges:<br>",
+    "outcome":"outcome:<br>",
+    "technologies":["python", "flask", "html", "css", "js"],
+    "screenshot_quantity":"1"
+}
