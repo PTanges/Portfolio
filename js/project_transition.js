@@ -5,10 +5,6 @@ class subproject_section{
         this._name = project_name;
         this._current_screenshot = "none";
     }
-        /*
-        BLUE: #1e90ff
-        ORANGE: #E16F00
-        */
 
     /* 3. Method Definitions */
     async _get_json_data(){
@@ -129,3 +125,14 @@ class subproject_section{
         document.getElementById("project_subproject_technologies_subsection").replaceChildren();
     }
 } /* end class */
+
+function create_subproject_page(new_page, project_name){
+    document.getElementById(current_page + "_" + "content").style.display = "none";   
+    document.getElementById(new_page + '_' + "content").style.display = "block";
+    document.getElementsByClassName("header_title")[0].innerHTML = project_name.toUpperCase();
+
+    let subproject = new subproject_section(project_name);
+    subproject.set_section_content();
+
+    current_page = "project_subproject";
+}

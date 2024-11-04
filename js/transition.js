@@ -26,18 +26,6 @@ function change_block_content(new_page){
     current_page = new_page;
 }
 
-function change_block_content_and_project_title(new_page, project_name){
-    document.getElementById(current_page + "_" + "content").style.display = "none";   
-    document.getElementById(new_page + '_' + "content").style.display = "block";
-    document.getElementsByClassName("header_title")[0].innerHTML = project_name.toUpperCase();
-
-    let subproject = new subproject_section(project_name);
-    subproject.set_section_content();
-
-    current_page = "project_subproject";
-}
-
-
 function set_personal_quote(){
     let _quotes = {
         0:"The sun sets with you",
