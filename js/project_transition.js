@@ -42,6 +42,7 @@ class subproject_section{
 
     set_section_content(){
         const json_data = this._get_json_data();
+        this._scroll_to_top();
     }
 
     _set_header_text(){
@@ -123,6 +124,14 @@ class subproject_section{
 
     _clear_technology_icons(){
         document.getElementById("project_subproject_technologies_subsection").replaceChildren();
+    }
+
+    /* 165px is roughly the height of Header + nav bar, may need to grab heights manually for more accuracy/scalability */
+    _scroll_to_top(){
+        window.scroll({
+            top: 165,
+            behavior: 'smooth'
+          });
     }
 } /* end class */
 

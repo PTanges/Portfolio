@@ -1,8 +1,8 @@
 {
     "project_name":"canvas",
-    "description":"description<br>Hallelujah",
-    "challenges":"challenges:<br>",
-    "outcome":"outcome:<br>",
+    "description":"<b>Description:</b><br>Python (Flask) web application utilizing the Canvas and DOM APIs. Users may create in-browser pieces and export files locally with the Javascript functions. WSGI Server (Gunicorn) is invoked with a Powershell command. Future development additions will utilize P2P connections with the WebSockets API to allow for real-time connectivity between users.",
+    "challenges":"<b>Challenges:</b><br>The project ran into many various developmental roadblocks. Initially, the framework used was Django. However, this proved to be difficult to develop in and required a shift to Flask instead. As per project requirements, there were deadlines that needed to be met. The change of plans resulted in many hours of development time to be scrapped.",
+    "outcome":"<b>Outcome:</b><br>At the time of writing (11-04-24), the project is still under development. Progress under the Flask framework has been moving along better than with the prior tech stack. The canvas functionality works as intended, although takes a drastically different route than anticipated. The canvas uses a bitmap grid instead of vector based objects. The project deployed successfully to the website host, Render, although loading time will be quite lengthy due to the tier-policy. The program could run entirely on a static site and be hosted via websites such as Github, but the web connectivity aspect broadens the project scope. The additional feature of real-time connectivity necessitates a back-end server to process data between client browsers.",
     "technologies":["python", "flask", "html", "css", "js"],
     "screenshot_quantity":"1"
 }

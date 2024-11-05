@@ -1,8 +1,8 @@
 {
     "project_name":"portfolio",
-    "description":"description",
-    "challenges":"challenges",
-    "outcome":"outcome",
+    "description":"<b>Description:</b><br>The static site is being displayed now! The portfolio is built with HTML, CSS, and Javascript. The main nav bar remains simple with three major options, with the project folder opening up to further subpages to ease with the user's navigation.",
+    "challenges":"<b>Challenges:</b><br>The majority of issues were related to formatting. Many elements simply did not line up. The window editor dramatically assisted in aligning elements and adjusting values (such as padding and margin). Additionally, designing the website with mobile in mind also proved to be difficult. The last issue was with the Fetch API. The incomplete JSON data would be passed without resolving the promise, leading to many errors.",
+    "outcome":"<b>Outcome:</b><br> (To Be Added once project is complete) The small brown fox jumped over the lazy log. There is always a Sunday in a week.",
     "technologies":["html", "css", "js"],
     "screenshot_quantity":"1"
 }

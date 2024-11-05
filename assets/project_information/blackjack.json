@@ -1,8 +1,8 @@
 {
     "project_name":"blackjack",
-    "description":"description",
-    "challenges":"challenges",
-    "outcome":"outcome",
+    "description":"<b>Description:</b><br>A Python command line interface program which allows a player to play Blackjack against an AI (utilizing the Monte Carlo algorithm) and the dealer.",
+    "challenges":"<b>Challenges:</b><br>Some challenges arrived in the form of wanting to write cleaner code with the new concept of game states. On top of aiming to implement an algorithm for the AI, I needed to choose fitting logic for both the dealer and the other player which both operate on different rules.",
+    "outcome":"<b>Outcome:</b><br>I ultimately decided to go with the Monte Carlo algorithm for the AI. Las Vegas in this scenario would not suit the Blackjack game scenario. A player must predict the best odds based on their existing hand and potentially the remaining cards left in the deck, approximated through card counting.<br><br>Monte Carlo returns the \"best answer\" it can with the given number of iterations, where as Las Vegas runs indefinitely until a right answer is given. A bot with the Las Vegas algorithm would need to break the Blackjack rules in order to function. Interestingly, the Monte Carlo Player loses (on average) more than the player (me) and the dealer. Additionally, I managed to utilize polymorphism in the Blackjack Game to utilize shared methods across all the various players. The players share the same base set of actions (derived from the base player class) which are overridden for each specific player-type.<br><br>Ultimately, the project succeeds in implementing the two AI's. By allowing an agent to view the contents of the dealer's deck, an algorithm would be able to produce the mathematically best result (via card counting). However, that would end up solely being a statistics problem rather than allowing an AI agent to have agency. Thus the AI work as intended, even though they lose (on average) more than the dealer.",
     "technologies":["python", "cli"],
     "screenshot_quantity":"1"
 }
