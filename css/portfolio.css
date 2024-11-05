@@ -225,6 +225,9 @@ body{
 
 #project_subproject_content{
     display: none;
+
+    margin: 0 30% 0 20%;
+    padding: 0;
 }
 
 #project_subproject_section{
@@ -233,9 +236,6 @@ body{
 
     max-width: 100vw;
     box-sizing: border-box;
-
-    margin: 0;
-    padding: 0;
 }
 
 #project_subproject_section{
@@ -247,26 +247,15 @@ body{
     /* Left */
     display: flex;
 
-    margin: 20px 0 10px 20%;
-    padding: 0;
-}
-
-#project_subproject_description_subsection{
-    margin: 0;
+    margin: 20px 0 10px 0;
     padding: 0;
 }
 
 #project_subproject_screenshot_subsection_content img{
-    margin: 0 0 0 20%;
     padding: 15px 15px 15px 0;
 
     width: 333px;
     height: 200px;
-}
-
-#project_subproject_technologies_subsection{
-    margin: 0 0 0 20%;
-    padding: 0;
 }
 
 #project_subproject_technologies_subsection img{
@@ -279,9 +268,8 @@ body{
 #project_subproject_description_content{
     display: flex;
     flex-direction: column;
-    align-items: left;
 
-    margin: 20px 20% 0 20%;
+    margin: 20px 0 0 0;
     padding: 5px;
 }
 
@@ -313,6 +301,20 @@ body{
     border-width: 0;
     border-left-width: 5px;
     border-color: #1e90ff;
+}
+
+#project_subproject_link{
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    
+    color: #fff;
+    background: #1e90ff;
+
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 8px 12px;
+    width: 40px;
 }
 
 /* id class : footer footer_section */
