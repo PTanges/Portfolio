@@ -104,10 +104,14 @@
 
                 <div id="contact_content">
                     <div class="socials_subsection_content">
-                        <a href="mailto:pattontanges@gmail.com" target="_blank" rel="noopener noreferrer"><img src="assets/software_icons/mail.png"></a>
-                        <a href="https://github.com/PTanges" target="_blank" rel="noopener noreferrer"><img src="assets/software_icons/github.png"></a>
-                        <a href="https://www.linkedin.com/in/patton-tang/"><img src="assets/software_icons/linkedin.png" target="_blank" rel="noopener noreferrer"></a>
-                        <a href="https://github.com/PTanges/Portfolio/blob/master/assets/PT_Resume.pdf" target="_blank" rel="noopener noreferrer"><img src="assets/software_icons/resume.png"></a>
+                        <a href="mailto:pattontanges@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <img id="socials_mail_icon" src="assets/software_icons/mail.png"></a>
+                        <a href="https://github.com/PTanges" target="_blank" rel="noopener noreferrer">
+                            <img id="socials_github_icon" src="assets/software_icons/github.png"></a>
+                        <a href="https://www.linkedin.com/in/patton-tang/">
+                            <img id="socials_linkedin_icon" src="assets/software_icons/linkedin.png" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="https://github.com/PTanges/Portfolio/blob/master/assets/PT_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <img id="socials_resume_icon" src="assets/software_icons/resume.png"></a>
                         <!-- target opens in new tab, rel for security -->
                     </div>
                 </div>
@@ -151,7 +155,7 @@
                     <h1><b>Blackjack AI</b></h1>
                     <div class="project_tool_subection_content">
                         <img src="assets/software_icons/python.png">
-                        <img src="assets/software_icons/cli.png">
+                        <img id="project_icon_cli" src="assets/software_icons/cli.png">
                     </div>
                     <p id="projects_subsection_description_blackjack">
                         A Python command line interface program which allows a player to play Blackjack against an AI (utilizing the Monte Carlo algorithm) and the dealer. 
@@ -179,7 +183,7 @@
         </div>
 
         <div id="footer" class="footer_section">
-            <a id="theme_icon" onclick="change_light_theme()"><img src="assets/software_icons/moon.png"></a>
+            <a id="theme_icon" onclick="change_light_theme()"><img id="mode_swap_theme_icon" src="assets/software_icons/moon.png"></a>
         </div>
 
         <script src="js/transition.js"></script>
