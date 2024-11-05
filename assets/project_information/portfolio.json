@@ -1,7 +1,7 @@
 {
     "project_name":"portfolio",
     "description":"<b>Description:</b><br>The static site is being displayed now! The portfolio is built with HTML, CSS, and Javascript. The main nav bar remains simple with three major options, with the project folder opening up to further subpages to ease with the user's navigation.",
-    "challenges":"<b>Challenges:</b><br>As with learning any new language, there are growing pains. In this case, there are three of them. Familiarity with markdown assisted in general text-formatting for HTML, however CSS and Javascript provided more issues.<br><br>The issues with CSS were simpler to amend, often related to proper tag hierarchy and being aware of margins.<br><br>As for Javascript, the Fetch API provided the most difficulty in working with.",
+    "challenges":"<b>Challenges:</b><br>Familiarity with markdown assisted in general text-formatting for HTML, however CSS and Javascript provided more issues.<br><br>The issues with CSS were simpler to rectify, often related to proper tag hierarchy, as well as being aware of margins and padding.<br><br>As for Javascript, the Fetch API provided the most difficulty in working with.",
     "outcome":"<b>Outcome:</b><br> (To Be Added once project is complete) The small brown fox jumped over the lazy log. There is always a Sunday in a week.",
     "technologies":["html", "css", "js"],
     "screenshot_quantity":"1"

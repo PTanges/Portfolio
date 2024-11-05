@@ -48,13 +48,15 @@ function set_personal_quote(){
 }
 
 function change_light_theme(){
-    /*
-    Functionality:
-    Change all icon links from black to white, or vice versa
-    - Set Header to pure Black, bar to Dark Gray
-    - Change Text Font from Black to White
-    */
+    /* document.getElementById("introduction_content").style.filter = 'invert(1)'; */
 }
+
+function _shift_icon_Y_position(){
+    const icon = document.getElementById('theme_icon');
+    icon.style.transform = 'translateY(0)';
+}
+
+window.addEventListener('scroll', _shift_icon_Y_position())
 
 function on_startup(){
     set_personal_quote();
