@@ -164,7 +164,7 @@ body{
     display: flex;
     justify-content: center;
 
-    margin: 1em;
+    margin: 60px 0;
     padding: 0 0 0 2em;
 }
 
@@ -220,6 +220,8 @@ body{
 }
 
 .project_github_link{
+    position: relative;
+
     text-decoration: none;
     border: none;
     cursor: pointer;
@@ -235,6 +237,7 @@ body{
 
 #project_subproject_content{
     display: none;
+    color: black;
 
     margin: 0 30% 0 20%;
     padding: 0;

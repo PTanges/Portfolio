@@ -31,16 +31,14 @@ class subproject_section{
             this._set_initial_screenshot(json_data.screenshot_quantity);
             this._set_technology_icons(json_data.technologies);
 
-            if (!this._check_theme_match()){
-                this._swap_theme();
-            }
         } catch(error){
             console.error(error.message);
             /* May need to implement better error handling, reroute user back to portfolio(?)*/
         } /* End Try Catch */
     }
 
-    set_section_content(){
+    set_section_content(project_name){
+        this._name = project_name
         const json_data = this._get_json_data();
         this._scroll_to_top();
     }
@@ -77,46 +75,56 @@ class subproject_section{
         this._clear_technology_icons();
         /* To Do: Check if container has >0 images, if not then append instead of blind clear */
 
-        const tech_quantity = tech_names.length;
-        for (let i = 0; i < tech_quantity; i++){
-            this._append_technology_icon(container, FILEPATH_PREFIX, tech_names[i]);
+        /* style technology icon */
+        let current_theme = this._check_current_theme(FILEPATH_PREFIX);
+
+        const _theme_to_colour = {
+            "light" : "white",
+            "dark" : "black"
+        }
+
+        for (let i = 0; i < tech_names.length; i++){
+            let _apply_image_filter = false;
+            _apply_image_filter = this._check_icon_theme_match(tech_names, i, _theme_to_colour, current_theme)
+
+            this._append_technology_icon(container, FILEPATH_PREFIX, tech_names[i], _apply_image_filter, current_theme);
         }
     }
 
-    _append_technology_icon(container, FILEPATH_PREFIX, tech){
+    _check_icon_theme_match(tech_names, tech_index, theme_name_to_colour, current_theme){
+        const default_tech_icon_colour = {
+            /* Technology:"Default" */
+            "github":"black",
+            "linkedin":"black",
+            "mail":"black",
+            "resume":"black",
+        }
+
+        if (default_tech_icon_colour[tech_names[tech_index]] == theme_name_to_colour[current_theme]){
+            return true;
+        }
+        else {return false;}
+    }
+
+    _append_technology_icon(container, FILEPATH_PREFIX, tech, filter_flag, current_theme){
         /* Note: JSON arrays preserve item order */
+        const style_filter_effect = {
+            "dark" : "invert(1)",
+            "light" : "none"
+        }
+
         let tech_icon = document.createElement('img');
         tech_icon.src = FILEPATH_PREFIX + tech + ".png";
-        container.append(tech_icon)
+        if (filter_flag){tech_icon.style.filter = style_filter_effect[current_theme];}
+        container.append(tech_icon);
     }
 
-    _check_theme_match(){
-        /*
-            For (everything)* in subsection, compare to global var light_theme
-            *May only compare (one) element such as Header[0] to check font colour, black = "default"
-
-            Return true/false
-        */
+    _check_current_theme(FILEPATH_PREFIX){
+        const _theme_icon = document.getElementById("mode_swap_theme_icon");
+        if (_theme_icon.src.endsWith(FILEPATH_PREFIX + "sun.png")){ return "dark"; }
+        else {return "light";}
     }
-
-    _swap_theme(){
-        this._light_mode_swap_text();
-        this._light_mode_swap_technology_icons();
-    }
-
-    _light_mode_swap_text(){
-        /*
-            Set fonts to light_theme
-        */
-    }
-
-    _light_mode_swap_technology_icons(){
-        /* Set images to light_theme
-        */
-        
-        /* new_image.style.filter = 'invert(1)'; or none */
-    }
-
+    
     _set_subsection_text(subsection_name, json_text){
         const FILEPATH = "project_subproject_" + subsection_name + "_" + "subsection";
         document.getElementById(FILEPATH).innerHTML = json_text;
@@ -140,8 +148,9 @@ function create_subproject_page(new_page, project_name){
     document.getElementById(new_page + '_' + "content").style.display = "block";
     document.getElementsByClassName("header_title")[0].innerHTML = project_name.toUpperCase();
 
-    let subproject = new subproject_section(project_name);
-    subproject.set_section_content();
+    subproject.set_section_content(project_name);
 
     current_page = "project_subproject";
 }
+
+var subproject = new subproject_section("");
