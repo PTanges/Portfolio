@@ -17,12 +17,12 @@ body{
     align-items: center;
     margin: 0px;
 
-    background-color: #333;
+    background-color: #000;
 }
 
 .header_title{
     font-size: 34px;
-    color: #1e90ff;
+    color: #E16F00;
 }
 
 
@@ -35,7 +35,7 @@ body{
 
     margin: 0px;
     padding: 0.5em;
-    background-color: #444;
+    background-color: #222;
     justify-content: center;
 }
 
@@ -55,7 +55,7 @@ body{
 }
 
 .nav-bar button:hover{
-    color: #1e90ff;
+    color: #5746B2; /* Mild Purple */
     transform: translateY(-8px);
     font-weight: bold;
     transition: font-weight 0.05s ease;
@@ -71,7 +71,7 @@ body{
 
 .content_section{
     padding: 10px 0 136px 0;
-    background-color: #fff;
+    background-color: #000;
 }
 
 #introduction_content{
@@ -81,6 +81,8 @@ body{
     justify-items: center;
 
     margin: 0px;
+
+    color: #fff;
 }
 
 #introduction_content img{
@@ -112,6 +114,7 @@ body{
 
 
 #quote_content{
+    color: #fff;
     font-size: 14px;
 }
 
@@ -317,6 +320,7 @@ body{
 }
 
 #project_subproject_link{
+    position: relative;
     text-decoration: none;
     border: none;
     cursor: pointer;
@@ -328,6 +332,10 @@ body{
     border-radius: 5px;
     padding: 8px 12px;
     width: 40px;
+}
+
+#project_subproject_link:hover{
+    transform: scale(1.2);
 }
 
 /* id class : footer footer_section */

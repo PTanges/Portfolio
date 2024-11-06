@@ -14,8 +14,8 @@ function change_light_theme(){
     let light_theme = document.getElementById("mode_swap_theme_icon");
     const new_theme = _determine_next_theme(light_theme.src)
 
-    swap_theme_icon(light_theme, FILEPATH_PREFIX, new_theme)
-    swap_themes(color_to_hex_code, FILEPATH_PREFIX, new_theme)
+    _swap_theme_icon(light_theme, FILEPATH_PREFIX, new_theme)
+    _swap_themes(color_to_hex_code, FILEPATH_PREFIX, new_theme)
 }
 
 function _determine_next_theme(theme_icon_URL){
@@ -23,13 +23,13 @@ function _determine_next_theme(theme_icon_URL){
     else{ return "dark";}
 }
 
-function swap_theme_icon(light_theme, FILEPATH_PREFIX, new_theme){
+function _swap_theme_icon(light_theme, FILEPATH_PREFIX, new_theme){
     /* Icons are inversed of the actual theme, ie current light_theme will show icon moon.png */
     if (new_theme == "light"){light_theme.src = FILEPATH_PREFIX + "moon.png";}
     else {light_theme.src = FILEPATH_PREFIX + "sun.png";}
 }
 
-function swap_themes(colours, FILEPATH_PREFIX, new_theme){
+function _swap_themes(colours, FILEPATH_PREFIX, new_theme){
     /* Define values */
     const light = "light";
     const dark = "dark";
@@ -128,8 +128,6 @@ function swap_themes(colours, FILEPATH_PREFIX, new_theme){
         document.getElementById("socials_" + project_social_icons[i] + "_icon").style.filter = style_filter_effect[new_theme];
     }
 
-    document.getElementById("project_icon_cli").style.filter = style_filter_effect[new_theme];
-
     /* style_backgrounds */
     const theme_colour_keys = Object.keys(class_section_theme_colours_backgrounds);
     for (let i = 0; i < theme_colour_keys.length; i++){
@@ -147,8 +145,6 @@ function swap_themes(colours, FILEPATH_PREFIX, new_theme){
     /* style_border_box */
     const border_box_keys = Object.keys(text_section_border_boxes);
     for (let i = 0; i < border_box_keys.length; i++){
-        console.log("CURRENT BORDER COLOUR: " + document.getElementById(border_box_keys[i]).style.borderColor)
-        console.log("NEW BORDER COLOUR: " + text_section_border_boxes[border_box_keys[i]][new_theme])
         document.getElementById(border_box_keys[i]).style.borderColor = text_section_border_boxes[border_box_keys[i]][new_theme];
     }
 
@@ -167,6 +163,8 @@ function swap_themes(colours, FILEPATH_PREFIX, new_theme){
     */
 }
 
-function _swap_to_light_theme(colours){
-    document.getElementById("mode_swap_theme_icon").src = "assets/software_icons/moon.png"
+function pre_load_dark_theme(){
+    change_light_theme()
 }
+
+document.addEventListener("DOMContentLoaded", pre_load_dark_theme());
