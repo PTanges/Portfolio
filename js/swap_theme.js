@@ -131,8 +131,8 @@ function _swap_themes(colours, FILEPATH_PREFIX, new_theme){
     /* style_backgrounds */
     const theme_colour_keys = Object.keys(class_section_theme_colours_backgrounds);
     for (let i = 0; i < theme_colour_keys.length; i++){
-        document.querySelectorAll(_class_section_names_for_backgrounds[theme_colour_keys[i]]).forEach(header => {
-            header.style.backgroundColor = class_section_theme_colours_backgrounds[theme_colour_keys[i]][new_theme];
+        document.querySelectorAll(_class_section_names_for_backgrounds[theme_colour_keys[i]]).forEach(bg_colour => {
+            bg_colour.style.backgroundColor = class_section_theme_colours_backgrounds[theme_colour_keys[i]][new_theme];
         });
     }
 
@@ -151,8 +151,8 @@ function _swap_themes(colours, FILEPATH_PREFIX, new_theme){
     /* style_border_box for classes */
     const border_keys = Object.keys(class_section_border_boxes);
     for (let i = 0; i < border_keys.length; i++){
-        document.querySelectorAll(_class_section_names_for_border_box[border_keys[i]]).forEach(header => {
-            header.style.borderColor = class_section_border_boxes[border_keys[i]][new_theme];
+        document.querySelectorAll(_class_section_names_for_border_box[border_keys[i]]).forEach(text_border => {
+            text_border.style.borderColor = class_section_border_boxes[border_keys[i]][new_theme];
         });
     }
 
