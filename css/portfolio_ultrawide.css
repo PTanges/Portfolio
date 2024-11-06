@@ -1,0 +1,65 @@
+/*  May use @media to format specific sizes
+    @media (min-height:980px) and (min-width:1440px){}
+*/
+.container{
+    overflow-x: hidden;
+}
+
+#introduction_subsection_content{
+    font-size: 40px;
+}
+
+#quote_content{
+    font-size: 30px;
+}
+
+.nav-bar button{
+    margin: 10px 20px;
+    font-size: 25px;
+}
+
+#biography_content{
+    margin: 0 10% 0 15%;
+    transform: scale(1.1);
+}
+
+.socials_subsection_content{
+    transform: scale(1.4);
+}
+
+.projects_subsection_content{
+    box-sizing: border-box;
+    max-width: 100vw;
+
+    margin: 10px 20px;;
+    padding: 0 15% 85px 15%;
+    transform: scale(1.3);
+}
+
+.projects_subsection_content p{
+    font-size: 20px;
+    margin: 0 0 20px 10px;
+}
+
+.project_github_link{
+    transform: scale(1.2);
+}
+
+#project_subproject_content{
+    margin: 0 10% 0 5%;
+    padding: 5% 5% 5% 10%;
+    transform: scale(1.2);
+    height: 100vh;
+}
+
+#project_subproject_description_content{
+    font-size: 20px;
+}
+
+#project_subproject_link{
+    display: flex;
+    justify-content: center;
+    
+    width: 10%;
+    font-size: 20px;
+}
