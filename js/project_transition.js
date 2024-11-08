@@ -7,11 +7,11 @@ class subproject_section{
     }
 
     /* 3. Method Definitions */
-    async _get_json_data(){
+    async update_subproject_data(){
         /* a. Set Filepath (or URL) */
         const FILEPATH_PREFIX = "assets/project_information/";
 
-        let url = FILEPATH_PREFIX + this._name + ".json"
+        let url = FILEPATH_PREFIX + this._name + ".json";
         /* b. Try Catch: Fetch (GET) Json file from location, default request is (GET) */
         try{
             const response = await fetch(url);
@@ -39,7 +39,7 @@ class subproject_section{
 
     set_section_content(project_name){
         this._name = project_name
-        const json_data = this._get_json_data();
+        this.update_subproject_data();
         this._scroll_to_top();
     }
 
