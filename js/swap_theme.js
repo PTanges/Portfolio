@@ -163,6 +163,7 @@ function _swap_themes(colours, FILEPATH_PREFIX, new_theme){
     */
 }
 
+/* Note: Consider adding Cookies to remember the LAST theme used */
 function pre_load_dark_theme(){
     change_light_theme()
 }
