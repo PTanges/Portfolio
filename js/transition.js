@@ -36,10 +36,10 @@ function _shift_icon_Y_position(){
     icon.style.transform = 'translateY(0)';
 }
 
-window.addEventListener('scroll', _shift_icon_Y_position())
+window.addEventListener('scroll', _shift_icon_Y_position)
 
 function on_startup(){
     set_personal_quote();
 }
 
-document.addEventListener("DOMContentLoaded", on_startup()); // Runonce upon page load
+document.addEventListener("DOMContentLoaded", on_startup); // Runonce upon page load

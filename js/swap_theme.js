@@ -168,4 +168,4 @@ function pre_load_dark_theme(){
     change_light_theme()
 }
 
-document.addEventListener("DOMContentLoaded", pre_load_dark_theme());
+document.addEventListener("DOMContentLoaded", pre_load_dark_theme);
