@@ -1,8 +1,8 @@
 {
     "project_name":"portfolio",
-    "description":"<b>Description:</b><br>The static site is being displayed now! The portfolio is built with HTML, CSS, and Javascript. The main nav bar remains simple with three major options, with the project folder opening up to further subpages to ease with the user's navigation.",
-    "challenges":"<b>Challenges:</b><br>Familiarity with markdown assisted in general text-formatting for HTML, however CSS and Javascript provided more issues.<br><br>The issues with CSS were simpler to rectify, often related to proper tag hierarchy, as well as being aware of margins and padding.<br><br>As for Javascript, the Fetch API provided the most difficulty in working with.",
-    "outcome":"<b>Outcome:</b><br> (To Be Added once project is complete) The small brown fox jumped over the lazy log. There is always a Sunday in a week.",
+    "description":"<b>Description:</b><br>The portfolio is the single-page site being displayed now! The project was built with HTML, CSS, and Javascript. The site was designed with responsive UI in mind for a better user experience.",
+    "challenges":"<b>Challenges:</b><br>One of the most difficult parts of working on the site was getting accustomed to how CSS and Javascript interacted with one another along with DOM principles. Additionally, events proved to come with their own challenges such as fetch-promise in combination with asynchronous functions and the feature where class variables passed into class-instantiated events lose their reference pointer.",
+    "outcome":"<b>Outcome:</b><br>The site succeeds in being a single-page website with swift connection times. I believe navigation between the various \"subpages\" to be intuitive, as well as the swap theme button assisting in the user experience.",
     "technologies":["html", "css", "js"],
     "screenshot_quantity":"1"
 }
