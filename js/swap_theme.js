@@ -79,6 +79,8 @@ function _swap_themes(colours, FILEPATH_PREFIX, new_theme){
         "projects_subsection_description_canvas" : {dark : colours["orange"], light : colours["blue"]},
         "projects_subsection_description_portfolio" : {dark : colours["orange"], light : colours["blue"]},
         "projects_subsection_description_blackjack" : {dark : colours["orange"], light : colours["blue"]},
+        "projects_subsection_description_typefighter" : {dark : colours["orange"], light : colours["blue"]},
+        "projects_subsection_description_bookclub" : {dark : colours["orange"], light : colours["blue"]},
         "project_subproject_description_subsection" : {dark : colours["orange"], light : colours["blue"]},
         "project_subproject_challenges_subsection" : {dark : colours["orange"], light : colours["blue"]},
         "project_subproject_outcome_subsection" : {dark : colours["orange"], light : colours["blue"]}

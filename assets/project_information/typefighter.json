@@ -1,0 +1,8 @@
+{
+    "project_name":"typefighter",
+    "description":"<b>Description:</b><br>TypeFighter plays on the concept of online community gamification. Facebook brands in the early 2010's used to set community driven goals to incentivize engagement. Typing tests typically are one-and-done deals for users, however adding a layer of competition helps encourage users to both use the services provided and also improve their times (ie typing speed).",
+    "challenges":"<b>Challenges:</b><br>The most difficult section of the website to function was the internal tool to obtain and integrate the book prompts. The team believed that \"natural\" sentences (such as those found within books) were best for the user experience. Open Library (Internet Archive project) offers an API service that allows for developers to query books by title and books within genres amongst other metrics. While the API has a broad encompassing net, the lifespan stretching over a decade results in considerable variation within the returned JSON data. Ultimately, manual review and verification was necessary to extract book data after the API return before inserting the prompts into the database.",
+    "outcome":"<b>Outcome:</b><br>The project succeeds in some of the initial development goals. Users can register and submit scores along with seeing a rudimentary leaderboard. Prompts are quick. The typing test is both responsive and accurate as well.",
+    "technologies":["flask", "python", "react", "vercel", "neon", "html", "css", "js"],
+    "screenshot_quantity":"1"
+}
