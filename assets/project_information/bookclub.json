@@ -1,0 +1,8 @@
+{
+    "project_name":"bookclub",
+    "description":"<b>Description:</b><br>The project aims to develop a secure and scalable cloud-based book tracking and discussion platform hosted on Amazon Web Services (AWS). Features included are the ability for users to search books, view storefronts in which those books can be bought (such as Amazon, Goodreads, etc), with future features being the ability to rate and write reviews for books, and engage with others through either a forum or by seeing activity on one's friends list.",
+    "challenges":"<b>Challenges:</b><br>There were significant challenges with the project. Cost was a major strain on the ability to deploy services and maintain the project; the project currently is no longer available due to upkeep cost. The API utilized to obtain book information returned variable information formats which made integration with AWS difficult. Terraform conflicted heavily with the AWS services.",
+    "outcome":"<b>Outcome:</b><br>All goal set by the team were ultimately not met. The project missed the mark in promising too many features without being able to deliver on them. Additionally, the various interconnected AWS services (API Gateway, AWS Cognito, AWS Lambda, AWS VPC, AWS Cloudwatch, etc) constantly would bring down the system due to configuration conflicts. At the end of the day, the existing viable project features would be fully integratable off of AWS and through a static website with a standard host.",
+    "technologies":["aws", "flask", "html", "css", "js"],
+    "screenshot_quantity":"1"
+}
